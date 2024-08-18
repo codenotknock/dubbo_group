@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <dubbo:application name="dubbo-provider-02">
+        <dubbo:parameter key="qos.enable" value="false"/>
+    </dubbo:application>
+
+<!--    网络通信访问端口 20880    设置成-1，会从20880可是检测到一个可用端口进行使用，兼容性更好-->
+<!--    <dubbo:protocol name="dubbo" port="20880"/>-->
+    <dubbo:protocol name="dubbo" port="-1"/>
+
+<!--    发布 dubbo 服务,被 consumer 服务调用-->
+    <dubbo:service interface="org.xiaofu.service.UserService" ref="userService"/>
+
+    <bean id="userService" class="org.xiaofu.service.UserInnerServiceImpl"/>
+
+
+
+
+
+</beans>

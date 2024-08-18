@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <dubbo:application name="dubbo-consumer-03">
+        <dubbo:parameter key="qos.enable" value="false"/>
+    </dubbo:application>
+
+<!--    通过网络访问 provider 20880-->
+    <dubbo:reference interface="org.xiaofu.service.UserService" id="userService" url="dubbo://192.168.0.105:20880/org.xiaofu.service.UserService"/>
+
+
+
+
+
+</beans>
