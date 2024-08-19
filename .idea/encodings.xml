@@ -7,11 +7,18 @@
     <file url="file://$PROJECT_DIR$/dubbo-consumer-03/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dubbo-consumer-03v2/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dubbo-consumer-03v2/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo-protocol-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo-protocol-api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo-protocol-consumer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo-protocol-consumer/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo-protocol-provider/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo-protocol-provider/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dubbo-provider-02/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dubbo-provider-02/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dubbo-provider-02v2/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dubbo-provider-02v2/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

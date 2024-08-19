@@ -9,12 +9,18 @@
 
 <!--    网络通信访问端口 20880    设置成-1，会从20880可是检测到一个可用端口进行使用，兼容性更好-->
 <!--    <dubbo:protocol name="dubbo" port="20880"/>-->
-    <dubbo:protocol name="dubbo" port="-1"/>
+    <dubbo:protocol name="dubbo" port="-1" serialization="protobuf"/>
 
 <!--    发布 dubbo 服务,被 consumer 服务调用-->
-    <dubbo:service interface="org.xiaofu.service.UserService" ref="userService"/>
+<!--    <dubbo:service interface="org.xiaofu.service.UserService" ref="userService"/>
+        <bean id="userService" class="org.xiaofu.service.UserInnerServiceImpl"/>  -->
 
-    <bean id="userService" class="org.xiaofu.service.UserInnerServiceImpl"/>
+
+    <bean id="helloService" class="org.xiaofu.service.HelloServiceImpl"/>
+    <dubbo:service interface="org.xiaofu.HelloService" ref="helloService"/>
+
+
+
 
 
 

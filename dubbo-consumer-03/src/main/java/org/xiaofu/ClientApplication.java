@@ -17,8 +17,13 @@ public class ClientApplication {
 
     public static void main(String[] args) {
         ClassPathXmlApplicationContext classPathXmlApplicationContext = new ClassPathXmlApplicationContext("applicationContext-consumer.xml");
-        UserService userService = (UserService) classPathXmlApplicationContext.getBean("userService");
-        boolean login = userService.login(new User("xiaofu", "123456"));
-        log.info("userService.login：" + String.valueOf(login));
+//        UserService userService = (UserService) classPathXmlApplicationContext.getBean("userService");
+//        boolean login = userService.login(new User("xiaofu", "123456"));
+//        log.info("userService.login：" + String.valueOf(login));
+
+        HelloService helloService = (HelloService) classPathXmlApplicationContext.getBean("helloService");
+        HelloResponse response = helloService.sayHello(HelloRequest.newBuilder().setName("xiaofu").build());
+        System.out.println("response: " + response);
+
     }
 }

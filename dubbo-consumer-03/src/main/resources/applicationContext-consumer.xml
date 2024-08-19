@@ -8,7 +8,10 @@
     </dubbo:application>
 
 <!--    通过网络访问 provider 20880-->
-    <dubbo:reference interface="org.xiaofu.service.UserService" id="userService" url="dubbo://192.168.0.105:20880/org.xiaofu.service.UserService"/>
+<!--    <dubbo:reference interface="org.xiaofu.service.UserService" id="userService" url="dubbo://192.168.0.105:20880/org.xiaofu.service.UserService"/>-->
+
+
+    <dubbo:reference interface="org.xiaofu.HelloService" id="helloService" url="dubbo://192.168.0.105:20880/org.xiaofu.HelloService?serialization=protobuf"/>
 
 
 
