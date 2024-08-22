@@ -13,7 +13,7 @@ import org.xiaofu.tri.GreeterRequest;
  * @description DemoServiceImpl
  **/
 
-@DubboService
+//@DubboService // todo 临时注释，避免影响UserServiceImpl的测试
 public class GreeterImpl extends DubboGreeterTriple.GreeterImplBase {
 
     @Override
