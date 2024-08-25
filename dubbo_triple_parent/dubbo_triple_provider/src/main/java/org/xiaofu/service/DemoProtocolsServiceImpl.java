@@ -8,7 +8,7 @@ import org.apache.dubbo.config.annotation.DubboService;
  * @program dubbo_group
  * @description DemoProtocolsServiceImpl 同时支持多种协议调用
  **/
-@DubboService(protocol = {"one", "two"})
+@DubboService(protocol = {"one", "two"}, registry = {"shanghai"})
 public class DemoProtocolsServiceImpl implements DemoProtocolsService{
     @Override
     public void show(String name) {

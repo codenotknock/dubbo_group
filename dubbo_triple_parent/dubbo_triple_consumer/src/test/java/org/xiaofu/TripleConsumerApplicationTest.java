@@ -11,7 +11,8 @@ import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
 class TripleConsumerApplicationTest {
 
-    @DubboReference(url = "xxx", protocol = "tri")
+    // registry 指定注册中心
+    @DubboReference(url = "xxx", protocol = "tri", registry = {"beijing"})
     private DubboGreeterTriple.GreeterImplBase greeterImplBase;
 
     @Test
