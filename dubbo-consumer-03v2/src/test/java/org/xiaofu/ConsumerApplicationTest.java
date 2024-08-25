@@ -12,7 +12,8 @@ import org.xiaofu.service.UserService;
 class ConsumerApplicationTest {
 
     private static final Logger log = LoggerFactory.getLogger(ConsumerApplicationTest.class);
-    @DubboReference(url = "dubbo://192.168.0.105:20880/org.xiaofu.service.UserService")
+    // group 的分组需要与provider保持一致
+    @DubboReference(url = "dubbo://192.168.0.105:20880/org.xiaofu.service.UserService", group = "user1", version="v1")
     private UserService userService;
 
     @Test
