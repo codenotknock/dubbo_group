@@ -8,7 +8,8 @@ import org.apache.dubbo.config.annotation.DubboService;
  * @program dubbo_group
  * @description DemoProtocolsServiceImpl 同时支持多种协议调用
  **/
-@DubboService(protocol = {"one", "two"}, registry = {"shanghai"})
+// weight 结合权重的随机访问负载均衡算法
+@DubboService(protocol = {"one", "two"}, registry = {"shanghai"}, weight = 2)
 public class DemoProtocolsServiceImpl implements DemoProtocolsService{
     @Override
     public void show(String name) {
